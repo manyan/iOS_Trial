@@ -59,7 +59,7 @@
     
     self.label = [[UILabel alloc]
                   initWithFrame:CGRectMake(115.0f, 150.0f, 200.0f, 30.0f)];
-    self.label.text = NSLocalizedStringFromTable(@"hello", @"ja.lproj", nil);
+    self.label.text = NSLocalizedStringFromTable(@"hello", @"cn", nil);
     [self.view addSubview:self.label];
 }
 
