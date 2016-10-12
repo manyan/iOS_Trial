@@ -13,6 +13,8 @@
 		450E90BE1DAD1CB9000E6252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450E90BC1DAD1CB9000E6252 /* LaunchScreen.storyboard */; };
 		450E90C91DAD1CB9000E6252 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E90C81DAD1CB9000E6252 /* HelloWorldTests.m */; };
 		450E90D41DAD1CB9000E6252 /* HelloWorldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450E90D31DAD1CB9000E6252 /* HelloWorldUITests.m */; };
+		451863FC1DAD2AC70056367A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451863FB1DAD2AC70056367A /* MainViewController.m */; };
+		451863FF1DAE5E320056367A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 451864011DAE5E320056367A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,14 @@
 		450E90CF1DAD1CB9000E6252 /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		450E90D31DAD1CB9000E6252 /* HelloWorldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldUITests.m; sourceTree = "<group>"; };
 		450E90D51DAD1CB9000E6252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451863FA1DAD2AC70056367A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		451863FB1DAD2AC70056367A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		451864001DAE5E320056367A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		451864031DAE5E930056367A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		451864041DAE60340056367A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		451864051DAE60340056367A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		451864091DAE60E20056367A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4518640A1DAE60E20056367A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,9 @@
 				450E90BC1DAD1CB9000E6252 /* LaunchScreen.storyboard */,
 				450E90BF1DAD1CB9000E6252 /* Info.plist */,
 				450E90AE1DAD1CB9000E6252 /* Supporting Files */,
+				451863FA1DAD2AC70056367A /* MainViewController.h */,
+				451863FB1DAD2AC70056367A /* MainViewController.m */,
+				451864011DAE5E320056367A /* Localizable.strings */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -220,6 +233,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = 450E90A21DAD1CB8000E6252;
 			productRefGroup = 450E90AC1DAD1CB9000E6252 /* Products */;
@@ -239,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450E90BE1DAD1CB9000E6252 /* LaunchScreen.storyboard in Resources */,
+				451863FF1DAE5E320056367A /* Localizable.strings in Resources */,
 				450E90BB1DAD1CB9000E6252 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450E90B31DAD1CB9000E6252 /* AppDelegate.m in Sources */,
+				451863FC1DAD2AC70056367A /* MainViewController.m in Sources */,
 				450E90B01DAD1CB9000E6252 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,8 +322,21 @@
 			isa = PBXVariantGroup;
 			children = (
 				450E90BD1DAD1CB9000E6252 /* Base */,
+				451864041DAE60340056367A /* zh-Hans */,
+				451864091DAE60E20056367A /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		451864011DAE5E320056367A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451864001DAE5E320056367A /* Base */,
+				451864031DAE5E930056367A /* en */,
+				451864051DAE60340056367A /* zh-Hans */,
+				4518640A1DAE60E20056367A /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -316,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -364,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -489,6 +521,7 @@
 				450E90DA1DAD1CB9000E6252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		450E90DB1DAD1CB9000E6252 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +530,7 @@
 				450E90DD1DAD1CB9000E6252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		450E90DE1DAD1CB9000E6252 /* Build configuration list for PBXNativeTarget "HelloWorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +539,7 @@
 				450E90E01DAD1CB9000E6252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
