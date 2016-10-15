@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "SelectBankViewController.h"
 
 @interface MainViewController ()
 
@@ -26,7 +27,7 @@
      */
     self.textField = [[UITextField alloc]
                       initWithFrame:
-                      CGRectMake(10.0f, 30.0f,
+                      CGRectMake(50.0f, 80.0f,
                                  300.0f, 30.0f)];
     
     self.textField.delegate = self;
@@ -61,6 +62,27 @@
                   initWithFrame:CGRectMake(115.0f, 150.0f, 200.0f, 30.0f)];
     self.label.text = NSLocalizedStringFromTable(@"hello", @"cn", nil);
     [self.view addSubview:self.label];
+    
+    // Add bank button
+    UIButton *addBankbutton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    //set the button’s frame
+    addBankbutton.frame = CGRectMake(210.0f, 300.0f, 100.0f, 30.0f);
+    //set the target, action, and control event.
+    //more about this in the paragraph below
+    [addBankbutton addTarget:self
+               action:@selector(addBankButtonPressed)
+     forControlEvents:UIControlEventTouchUpInside];
+    //set the title
+    [addBankbutton setTitle:@"Add Bank" forState:UIControlStateNormal];
+    //add the button to the main view
+    [self.view addSubview:addBankbutton];
+}
+
+- (void) addBankButtonPressed {
+    NSLog(@"Lets segue!");
+    self.label.text = self.navigationController ? @"Valid" : @"InValid";
+    SelectBankViewController *selectBankViewController = [[SelectBankViewController alloc] init];
+    [self.navigationController pushViewController:selectBankViewController animated:YES];
 }
 
 - (void)buttonPressed {

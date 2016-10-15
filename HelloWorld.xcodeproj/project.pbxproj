@@ -16,6 +16,8 @@
 		451863FC1DAD2AC70056367A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451863FB1DAD2AC70056367A /* MainViewController.m */; };
 		4518640E1DAE67E10056367A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4518640D1DAE67E10056367A /* Localizable.strings */; };
 		451864101DAE67FC0056367A /* cn.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4518640F1DAE67FC0056367A /* cn.strings */; };
+		45564F6F1DB0E62700B00058 /* SelectBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45564F6E1DB0E62700B00058 /* SelectBankViewController.m */; };
+		45564F721DB216D100B00058 /* EnterBankAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45564F711DB216D100B00058 /* EnterBankAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		451864091DAE60E20056367A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4518640D1DAE67E10056367A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4518640F1DAE67FC0056367A /* cn.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = cn.strings; sourceTree = "<group>"; };
+		45564F6D1DB0E62700B00058 /* SelectBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBankViewController.h; sourceTree = "<group>"; };
+		45564F6E1DB0E62700B00058 /* SelectBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBankViewController.m; sourceTree = "<group>"; };
+		45564F701DB216D100B00058 /* EnterBankAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterBankAccountViewController.h; sourceTree = "<group>"; };
+		45564F711DB216D100B00058 /* EnterBankAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterBankAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				451863FB1DAD2AC70056367A /* MainViewController.m */,
 				4518640D1DAE67E10056367A /* Localizable.strings */,
 				4518640F1DAE67FC0056367A /* cn.strings */,
+				45564F6D1DB0E62700B00058 /* SelectBankViewController.h */,
+				45564F6E1DB0E62700B00058 /* SelectBankViewController.m */,
+				45564F701DB216D100B00058 /* EnterBankAccountViewController.h */,
+				45564F711DB216D100B00058 /* EnterBankAccountViewController.m */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -281,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45564F6F1DB0E62700B00058 /* SelectBankViewController.m in Sources */,
 				450E90B31DAD1CB9000E6252 /* AppDelegate.m in Sources */,
 				451863FC1DAD2AC70056367A /* MainViewController.m in Sources */,
 				450E90B01DAD1CB9000E6252 /* main.m in Sources */,
+				45564F721DB216D100B00058 /* EnterBankAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
